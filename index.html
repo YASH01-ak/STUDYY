@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Study - Class 10</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Study</h1>
+        <p>Class 10 Learning Website</p>
+    </header>
+
+    <nav>
+
+        <button onclick="showSection('home')">
+            Home
+        </button>
+
+        <button onclick="showSection('subjects')">
+            Subjects
+        </button>
+
+        <button onclick="showSection('papers')">
+            Previous Year Papers
+        </button>
+
+        <button onclick="showSection('quiz')">
+            Quiz
+        </button>
+
+        <button onclick="showSection('timer')">
+            Study Timer
+        </button>
+
+        <button onclick="showSection('tips')">
+            Study Tips
+        </button>
+
+    </nav>
+
+
+    <main>
+
+
+        <!-- HOME -->
+
+        <section id="home" class="section active">
+
+            <h2>Welcome to Study</h2>
+
+            <p>
+                Your Class 10 learning, revision and practice website.
+            </p>
+
+            <p>
+                Study chapters, read notes, practice questions,
+                attempt MCQs and solve previous year papers.
+            </p>
+
+            <button onclick="showSection('subjects')">
+                Start Studying
+            </button>
+
+        </section>
+
+
+
+        <!-- SUBJECTS -->
+
+        <section id="subjects" class="section">
+
+            <h2>Class 10 Subjects</h2>
+
+            <div class="subject-container">
+
+
+                <div class="subject-card">
+
+                    <h3>Science</h3>
+
+                    <p>
+                        Physics, Chemistry and Biology
+                    </p>
+
+                    <button onclick="showSubject('science')">
+                        Open Science
+                    </button>
+
+                </div>
+
+
+
+                <div class="subject-card">
+
+                    <h3>Social Science</h3>
+
+                    <p>
+                        History, Geography, Civics and Economics
+                    </p>
+
+                    <button onclick="showSubject('sst')">
+                        Open Social Science
+                    </button>
+
+                </div>
+
+
+
+                <div class="subject-card">
+
+                    <h3>Mathematics</h3>
+
+                    <p>
+                        Class 10 Mathematics chapters and formulas
+                    </p>
+
+                    <button onclick="showSubject('maths')">
+                        Open Mathematics
+                    </button>
+
+                </div>
+
+
+
+                <div class="subject-card">
+
+                    <h3>English</h3>
+
+                    <p>
+                        Literature, grammar and writing practice
+                    </p>
+
+                    <button onclick="showSubject('english')">
+                        Open English
+                    </button>
+
+                </div>
+
+
+
+                <div class="subject-card">
+
+                    <h3>Hindi</h3>
+
+                    <p>
+                        Literature and Hindi grammar
+                    </p>
+
+                    <button onclick="showSubject('hindi')">
+                        Open Hindi
+                    </button>
+
+                </div>
+
+
+
+                <div class="subject-card">
+
+                    <h3>Sanskrit</h3>
+
+                    <p>
+                        Literature, grammar, Sandhi, Dhatu Roop and Shlok
+                    </p>
+
+                    <button onclick="showSubject('sanskrit')">
+                        Open Sanskrit
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CHAPTER PAGE -->
+
+        <section id="subject-page" class="section">
+
+            <h2 id="subject-title"></h2>
+
+            <div id="chapter-list"></div>
+
+            <button onclick="showSection('subjects')">
+                Back to Subjects
+            </button>
+
+        </section>
+
+
+
+        <!-- PREVIOUS YEAR PAPERS -->
+
+        <section id="papers" class="section">
+
+            <h2>RBSE Previous Year Papers</h2>
+
+            <p>
+                Select a subject to see available previous year papers.
+            </p>
+
+
+            <div class="subject-container">
+
+
+                <div class="subject-card">
+
+                    <h3>Science</h3>
+
+                    <p>
+                        RBSE Class 10 Science Papers
+                    </p>
+
+                    <button onclick="showPapers('science')">
+                        View Papers
+                    </button>
+
+                </div>
+
+
+
+                <div class="subject-card">
+
+                    <h3>Mathematics</h3>
+
+                    <p>
+                        RBSE Class 10 Mathematics Papers
+                    </p>
+
+                    <button onclick="showPapers('maths')">
+                        View Papers
+                    </button>
+
+                </div>
+
+
+
+                <div class="subject-card">
+
+                    <h3>Social Science</h3>
+
+                    <p>
+                        RBSE Class 10 Social Science Papers
+                    </p>
+
+                    <button onclick="showPapers('sst')">
+                        View Papers
+                    </button>
+
+                </div>
+
+
+
+                <div class="subject-card">
+
+                    <h3>English</h3>
+
+                    <p>
+                        RBSE Class 10 English Papers
+                    </p>
+
+                    <button onclick="showPapers('english')">
+                        View Papers
+                    </button>
+
+                </div>
+
+
+
+                <div class="subject-card">
+
+                    <h3>Hindi</h3>
+
+                    <p>
+                        RBSE Class 10 Hindi Papers
+                    </p>
+
+                    <button onclick="showPapers('hindi')">
+                        View Papers
+                    </button>
+
+                </div>
+
+
+
+                <div class="subject-card">
+
+                    <h3>Sanskrit</h3>
+
+                    <p>
+                        RBSE Class 10 Sanskrit Papers
+                    </p>
+
+                    <button onclick="showPapers('sanskrit')">
+                        View Papers
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+            <div id="paper-list"></div>
+
+        </section>
+
+
+
+        <!-- QUIZ -->
+
+        <section id="quiz" class="section">
+
+            <h2>Class 10 Quiz</h2>
+
+            <p id="question"></p>
+
+            <div id="answers"></div>
+
+            <p id="quiz-result"></p>
+
+            <button onclick="nextQuestion()">
+                Next Question
+            </button>
+
+        </section>
+
+
+
+        <!-- TIMER -->
+
+        <section id="timer" class="section">
+
+            <h2>Study Timer</h2>
+
+            <div id="timer-display">
+                25:00
+            </div>
+
+            <button onclick="startTimer()">
+                Start
+            </button>
+
+            <button onclick="pauseTimer()">
+                Pause
+            </button>
+
+            <button onclick="resetTimer()">
+                Reset
+            </button>
+
+        </section>
+
+
+
+        <!-- STUDY TIPS -->
+
+        <section id="tips" class="section">
+
+            <h2>Study Tips</h2>
+
+
+            <div class="tip">
+                Understand the topic before memorising it.
+            </div>
+
+
+            <div class="tip">
+                Revise important topics regularly.
+            </div>
+
+
+            <div class="tip">
+                Practice questions after completing a chapter.
+            </div>
+
+
+            <div class="tip">
+                Take short breaks during long study sessions.
+            </div>
+
+
+            <div class="tip">
+                Explain difficult topics in your own words.
+            </div>
+
+
+            <div class="tip">
+                Solve previous year papers to understand the exam pattern.
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <footer>
+
+        <p>
+            Study - Class 10 Learning Project
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f9;
+    margin: 0;
+    color: #222222;
+}
+
+header {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 45px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+nav {
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 2px 5px #cccccc;
+}
+
+button {
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #172554;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+}
+
+.section {
+    display: none;
+    text-align: center;
+}
+
+.section.active {
+    display: block;
+}
+
+.subject-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.subject-card {
+    background-color: white;
+    width: 260px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #cccccc;
+    transition: 0.2s;
+}
+
+.subject-card:hover {
+    transform: translateY(-4px);
+}
+
+.subject-card h3 {
+    color: #1e3a8a;
+    font-size: 24px;
+}
+
+.chapter {
+    background-color: white;
+    margin: 15px auto;
+    padding: 25px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 2px 7px #cccccc;
+    text-align: left;
+}
+
+.chapter h3 {
+    color: #1e3a8a;
+}
+
+.chapter h4 {
+    color: #172554;
+    margin-top: 25px;
+}
+
+.chapter p {
+    line-height: 1.7;
+}
+
+.chapter li {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.tip {
+    background-color: white;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 650px;
+    border-radius: 10px;
+    box-shadow: 0 2px 7px #cccccc;
+}
+
+#timer-display {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 30px;
+    color: #1e3a8a;
+}
+
+#answers button {
+    display: block;
+    margin: 10px auto;
+    width: 300px;
+}
+
+#quiz-result {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#paper-list {
+    margin-top: 30px;
+}
+
+.paper-box {
+    background-color: white;
+    max-width: 700px;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 7px #cccccc;
+}
+
+.paper-box h3 {
+    color: #1e3a8a;
+}
+
+.note-title {
+    text-align: center;
+    color: #1e3a8a;
+    font-size: 30px;
+}
+
+.diagram {
+    background-color: #f8fafc;
+    border: 2px solid #cccccc;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.question-box {
+    background-color: #f8fafc;
+    border-left: 5px solid #1e3a8a;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.mcq-box {
+    background-color: #f8fafc;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.mcq-box button {
+    display: block;
+    width: 90%;
+    max-width: 500px;
+    margin: 8px auto;
+}
+
+.paper-year {
+    display: inline-block;
+    margin: 8px;
+}
+
+footer {
+    text-align: center;
+    background-color: #1e3a8a;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 35px;
+    }
+
+    nav button {
+        width: 90%;
+    }
+
+    .subject-card {
+        width: 85%;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    #answers button {
+        width: 90%;
+    }
+}
