@@ -29,9 +29,7 @@ The website may include educational material for subjects such as:
 * 🔬 Science
 * 🌍 Social Science
 * 📘 English
-* 🕉️ Sanskrit
 * ➗ Mathematics
-* 💻 Computer
 
 > Content and subjects may be updated as the project develops.
 
