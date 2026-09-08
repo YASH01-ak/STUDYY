@@ -63,15 +63,11 @@ No special software is required to view the website. A modern web browser is eno
 
 ```text
 STUDYY/
-│
+├── LICENSE
+├── README.md
 ├── index.html
-├── style.css
 ├── script.js
-│
-├── images/
-│   └── ...
-│
-└── README.md
+└── style.css
 ```
 
 > The exact structure may change as new features are added.
