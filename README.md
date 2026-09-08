@@ -107,7 +107,3 @@ Possible future updates include:
 ⭐ If you find the project useful, consider giving the repository a **star**!
 
 ---
-
-### 📌 Disclaimer
-
-This project is intended for educational purposes. Copyright and ownership of third-party material remain with their respective owners. If any third-party material is used incorrectly or without appropriate permission, it should be removed or replaced with properly licensed or original content.
