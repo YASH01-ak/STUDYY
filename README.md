@@ -78,41 +78,11 @@ STUDYY/
 
 ---
 
-## ⚖️ Copyright & Content Notice
-
-### Original Code & Design
-
-The original **HTML, CSS, JavaScript, and design work** created specifically for this project are the work of the project author unless otherwise stated.
-
-Please do not copy, redistribute, or present the project's original code or design as your own without permission.
-
-### Third-Party Content
-
-Some educational information, terminology, references, or other materials may be based on publicly available educational sources.
-
-**STUDYY does not claim ownership of third-party copyrighted material.**
-
-Any third-party material remains the property of its respective copyright holder and should be used according to the applicable copyright terms and licenses.
-
-Where applicable, third-party assets or resources should retain their original attribution or license information.
-
 ### Educational Purpose
 
 This website is created for **educational and learning purposes**.
 
 STUDYY is not affiliated with or officially endorsed by any textbook publisher, educational board, school, or other organization unless explicitly stated.
-
----
-
-## 📜 License
-
-Unless a separate license is included in this repository:
-
-**The original source code and design of this project are not granted an open-source license by default.**
-
-That means others should not assume they have permission to copy, modify, redistribute, or commercially use the original code.
-
-Third-party content, libraries, images, fonts, and other resources are subject to their respective licenses.
 
 ---
 
